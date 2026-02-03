@@ -18,8 +18,8 @@ npx happy-github-dependents --url=<repository_url> --type=<html|markdown|csv> --
 
 # Arguments
 
-| Argument   | Description                                              | Default value        | Required |
-| ---------- | -------------------------------------------------------- | -------------------- | -------- |
-| `--url`    | The URL of the GitHub repository to fetch dependents for |                      | Yes      |
-| `--type`   | The output format: `html`, `markdown`, or `csv`          | `html`               | No       |
-| `--output` | The output file path                                     | `./dependents.{ext}` | No       |
+| Argument   | Description                                 | Default value        | Required |
+| ---------- | ------------------------------------------- | -------------------- | -------- |
+| `--url`    | URL of the GitHub repository                |                      | Yes      |
+| `--type`   | Output format: `html`, `markdown`, or `csv` | `html`               | No       |
+| `--output` | Output file path                            | `./dependents.{ext}` | No       |
