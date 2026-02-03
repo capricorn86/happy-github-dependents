@@ -4,6 +4,10 @@ Uses [Happy DOM](https://github.com/capricorn86/happy-dom) to scrape GitHub depe
 
 This tool doesn't require any API keys as it uses the public GitHub web interface to get the data.
 
+<a href="https://www.npmjs.com/package/happy-github-dependents">
+    <img alt="Published on NPM" src="https://img.shields.io/npm/v/happy-dom.svg">
+</a>
+
 # Usage
 
 ```bash

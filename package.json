@@ -4,6 +4,15 @@
 	"description": "Uses happy-dom to scrape GitHub dependents pages for a Github repository and generate a report sorted by stars in various formats (HTML, Markdown, CSV).",
 	"license": "MIT",
 	"author": "David Ortner",
+	"keywords": [
+		"github",
+		"repository",
+		"dependents",
+		"scrape",
+		"stars",
+		"happy-dom"
+	],
+	"repository": "https://github.com/capricorn86/happy-github-dependents",
 	"type": "module",
 	"main": "lib/index.js",
 	"bin": {
