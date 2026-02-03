@@ -1,0 +1,26 @@
+{
+	"name": "happy-github-dependents",
+	"version": "1.0.0",
+	"description": "",
+	"license": "MIT",
+	"author": "",
+	"type": "module",
+	"main": "index.js",
+	"bin": {
+		"happy-dom-dependents": "./bin/happy-github-dependents.js"
+	},
+	"scripts": {
+		"compile": "tsc",
+		"build": "tsc && node ./bin/happy-github-dependents.js",
+		"debug": "tsc && node --inspect-brk ./bin/happy-github-dependents.js"
+	},
+	"dependencies": {
+		"chalk": "^5.6.2",
+		"happy-dom": "^20.4.0"
+	},
+	"devDependencies": {
+		"@types/node": ">=24.0.0",
+		"typescript": "^5.8.3",
+		"happy-conventional-commit": "^0.1.1"
+	}
+}
