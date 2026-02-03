@@ -1,11 +1,11 @@
 {
 	"name": "happy-github-dependents",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Uses happy-dom to scrape GitHub dependents pages for a Github repository and generate a report sorted by stars in various formats (HTML, Markdown, CSV).",
 	"license": "MIT",
-	"author": "",
+	"author": "David Ortner",
 	"type": "module",
-	"main": "index.js",
+	"main": "lib/index.js",
 	"bin": {
 		"happy-dom-dependents": "./bin/happy-github-dependents.js"
 	},

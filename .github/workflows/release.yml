@@ -65,7 +65,7 @@ jobs:
               run: npm ci --ignore-scripts
 
             - name: Set version
-              run: npm version ${{needs.check-next-version.outputs.next_version }}
+              run: npm --no-git-tag-version version ${{needs.check-next-version.outputs.next_version }}
 
             - name: Compile packages
               run: npm run compile
