@@ -24,6 +24,7 @@ jobs:
             - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
+                  token: ${{ secrets.GIT_REPOSITORY_ACCESS_TOKEN }}
                   ref: main
 
             - name: Use Node.js ${{ matrix.node-version }}
@@ -94,6 +95,7 @@ jobs:
             - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
+                  token: ${{ secrets.GIT_REPOSITORY_ACCESS_TOKEN }}
                   ref: main
 
             - name: Use Node.js ${{ matrix.node-version }}
