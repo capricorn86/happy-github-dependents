@@ -1,16 +1,15 @@
 import { Dependent } from "./types.js";
 
 export function getMarkdownOutput(dependents: Dependent[]): string {
-	return `
-    |Avatar | User | Repository | Stars |
-    |-------|------|------------|-------|
-    ${dependents
-		.map(
-			(dependent) =>
-				`| ![image](${dependent.avatarUrl}) | [${dependent.user}](https://github.com/${dependent.user}/) | [${dependent.repo}](https://github.com/${dependent.user}/${dependent.repo}/) | ⭐ **${withThousandSeparator(dependent.stars)}** |`,
-		)
-		.join("\n")}
-    `;
+	return (
+		"|Avatar | User | Repository | Stars |\n|-------|------|------------|-------|" +
+		dependents
+			.map(
+				(dependent) =>
+					`| <img alt="${dependent.user}" width="50px" src="${dependent.avatarUrl}"> | [${dependent.user}](https://github.com/${dependent.user}/) | [${dependent.repo}](https://github.com/${dependent.user}/${dependent.repo}/) | ⭐ **${withThousandSeparator(dependent.stars)}** |`,
+			)
+			.join("\n")
+	);
 }
 
 export function getHTMLOutput(dependents: Dependent[]): string {
