@@ -2,7 +2,7 @@ import { Dependent } from "./types.js";
 
 export function getMarkdownOutput(dependents: Dependent[]): string {
 	return (
-		"|Avatar | User | Repository | Stars |\n|-------|------|------------|-------|" +
+		"|Avatar | User | Repository | Stars |\n|-------|------|------------|-------|\n" +
 		dependents
 			.map(
 				(dependent) =>
