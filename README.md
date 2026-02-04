@@ -17,13 +17,13 @@ npx happy-github-dependents --url=<repository_url>
 or
 
 ```bash
-npx happy-github-dependents --url=<repository_url> --type=<html|markdown|csv> --output=<output_file>
+npx happy-github-dependents --url=<repository_url> --type=<html|markdown|json|csv> --output=<output_file>
 ```
 
 # Arguments
 
-| Argument   | Description                                 | Default value        | Required |
-| ---------- | ------------------------------------------- | -------------------- | -------- |
-| `--url`    | URL of the GitHub repository                |                      | Yes      |
-| `--type`   | Output format: `html`, `markdown`, or `csv` | `html`               | No       |
-| `--output` | Output file path                            | `./dependents.{ext}` | No       |
+| Argument   | Description                                         | Default value        | Required |
+| ---------- | --------------------------------------------------- | -------------------- | -------- |
+| `--url`    | URL of the GitHub repository                        |                      | Yes      |
+| `--type`   | Output format: `html`, `markdown`, `json`, or `csv` | `html`               | No       |
+| `--output` | Output file path                                    | `./dependents.{ext}` | No       |

@@ -6,7 +6,7 @@ import { getDependents } from "./browser.js";
 
 export async function build(
 	url: string,
-	type: "markdown" | "html" | "csv" | null,
+	type: "markdown" | "html" | "csv" | "json" | null,
 	output: string | null,
 ): Promise<void> {
 	console.log(Chalk.bold(Chalk.blue("Fetching dependents...\n")));
@@ -26,6 +26,12 @@ export async function build(
 			await FS.promises.writeFile(
 				Path.resolve(output || "./dependents.csv"),
 				getCSVOutput(dependents),
+			);
+			break;
+		case "json":
+			await FS.promises.writeFile(
+				Path.resolve(output || "./dependents.json"),
+				JSON.stringify(dependents, null, 4),
 			);
 			break;
 		case "html":
