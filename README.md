@@ -43,5 +43,7 @@ const dependents = await getDependents(
 	"https://github.com/capricorn86/happy-dom",
 );
 
+dependents.sort((a, b) => b.stars - a.stars);
+
 console.log(dependents);
 ```
