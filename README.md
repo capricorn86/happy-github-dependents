@@ -1,6 +1,6 @@
 # About
 
-Uses [Happy DOM](https://github.com/capricorn86/happy-dom) to scrape GitHub dependents pages for a Github repository and generate a report sorted by stars in various formats (HTML, Markdown, CSV).
+Uses [Happy DOM](https://github.com/capricorn86/happy-dom) to scrape GitHub dependents pages for a Github repository and generate a report sorted by stars in various formats (HTML, Markdown, JSON, CSV).
 
 This tool doesn't require any API keys as it uses the public GitHub web interface to get the data.
 
