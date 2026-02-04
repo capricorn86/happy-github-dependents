@@ -29,7 +29,10 @@ if (!args.url) {
 	throw new Error('Invalid arguments. Expected "--url={url}".');
 }
 
-if (args.type !== null && !["markdown", "html", "csv"].includes(args.type)) {
+if (
+	args.type !== null &&
+	!["markdown", "html", "csv", "json"].includes(args.type)
+) {
 	throw new Error(
 		'Invalid arguments. Expected "--type={markdown|html|csv}".',
 	);
